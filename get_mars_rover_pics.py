@@ -2,6 +2,7 @@
 # coding: utf-8
 """
     Takes input from NASA Mars-Rover API
+    https://api.nasa.gov/api.html#MarsPhotos
     And get latest Mars Photo
 """
 
