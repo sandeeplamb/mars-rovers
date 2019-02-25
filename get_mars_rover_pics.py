@@ -71,8 +71,8 @@ def make_rover_sol_url(ROVER):
         data        = response.json()
 
         for i in data:
-            random_range = random.randint(0,len(data[i]))
-            JPG_PHOTO = data[i][random_range]['img_src']
+            random_range    = random.randint(0,len(data[i]))
+            JPG_PHOTO       = data[i][random_range]['img_src']
             print(JPG_PHOTO)
     elif ROVER == "spirit":
         SOL_DAYS    = random.randint(1,2208)
@@ -84,8 +84,8 @@ def make_rover_sol_url(ROVER):
         data        = response.json()
 
         for i in data:
-            random_range = random.randint(0,len(data[i]))
-            JPG_PHOTO = data[i][random_range]['img_src']
+            random_range    = random.randint(0,len(data[i]))
+            JPG_PHOTO       = data[i][random_range]['img_src']
             print(JPG_PHOTO)
     else:
         print("Unknown Rover. Exiting now...")
@@ -114,8 +114,8 @@ def get_opportunity_photos():
         if len(data[i]) == 0:
             make_rover_sol_url(ROVER)
         else:
-            random_range = random.randint(0,len(data[i]))
-            JPG_PHOTO = data[i][random_range]['img_src']
+            random_range    = random.randint(0,len(data[i]))
+            JPG_PHOTO       = data[i][random_range]['img_src']
             print(JPG_PHOTO)
 #############################################
     
@@ -142,8 +142,8 @@ def get_spirit_photos():
         if len(data[i]) == 0:
             make_rover_sol_url(ROVER)
         else:
-            random_range = random.randint(0,len(data[i]))
-            JPG_PHOTO = data[i][random_range]['img_src']
+            random_range    = random.randint(0,len(data[i]))
+            JPG_PHOTO       = data[i][random_range]['img_src']
             print(JPG_PHOTO)
 
 
@@ -168,8 +168,8 @@ def get_curiosity_photos():
     data        = response.json()
 
     for i in data:
-        random_range = random.randint(0,len(data[i]))
-        JPG_PHOTO = data[i][random_range]['img_src']
+        random_range    = random.randint(0,len(data[i]))
+        JPG_PHOTO       = data[i][random_range]['img_src']
         print(JPG_PHOTO)
 
 #############################################
