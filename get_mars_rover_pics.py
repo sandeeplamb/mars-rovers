@@ -3,6 +3,7 @@
 """
     Takes input from NASA Mars-Rover API
     And get latest Mars Photo
+    https://api.nasa.gov/api.html#MarsPhotos
 """
 
 import requests
@@ -40,36 +41,6 @@ DELIMITER   = "&"
 #API_URL + sol=1000&camera=fhaz&api_key=API_KEY
 #API_URL + sol=1000&page=2&api_key=API_KEY
 #API_URL + earth_date=2015-6-3&api_key=API_KEY
-
-#############################################
-###ROVER CAMERAS
-#Abbreviation	Camera	                        Curiosity	Opportunity	 Spirit
-#FHAZ	        Front Hazard Avoidance Camera	    ✔	        ✔	       ✔
-#RHAZ	        Rear Hazard Avoidance Camera	    ✔	        ✔	       ✔
-#MAST	        Mast Camera	                        ✔	        	
-#CHEMCAM	    Chemistry and Camera Complex	    ✔	        	
-#MAHLI	        Mars Hand Lens Imager	            ✔	        	
-#MARDI	        Mars Descent Imager	                ✔	        	
-#NAVCAM	        Navigation Camera	                ✔	        ✔	       ✔
-#PANCAM	        Panoramic Camera		            ✔	        ✔
-#MINITES	    Miniature Thermal Emission                      ✔          ✔
-#               Spectrometer (Mini-TES)
-
-#############################################
-#QUERYING BY MARTIAN SOL
-#Parameter	Type	Default	    Description
-#sol	    int	    none	    sol (ranges from 0 to max found in endpoint)
-#camera	    string	all	        see table above for abbreviations
-#page	    int	    1	        25 items per page returned
-#api_key	string	DEMO_KEY	api.nasa.gov key for expanded usage
-
-#############################################
-#QUERYING BY EARTH DATE
-#Parameter	    Type	    Default	    Description
-#earth_date	    YYYY-MM-DD	none	    sol (ranges from 0 to max found in endpoint)
-#camera	        string	    all	s       ee table above for abbreviations
-#page	        int	        1	        25 items per page returned
-#api_key	    string  	DEMO_KEY	api.nasa.gov key for expanded usage
 
 #############################################
 
