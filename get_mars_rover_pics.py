@@ -23,7 +23,7 @@ ROVER_POST  = "/photos?"
 
 ROVER_INI   = ROVER_PRE + ROVER + ROVER_POST
 
-API_KEY     = "eXMn6FoCQTHPBMVaucmeN5QlWJ8Lmz5I6v5wFflc"
+API_KEY     = ""
 API_QS      = "api_key=" + API_KEY
 
 CAMERA      = ("FHAZ", "RHAZ", "MAST", 
