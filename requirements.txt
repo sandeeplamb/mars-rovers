@@ -1,0 +1,13 @@
+# Mars Rover Photo Fetcher Dependencies
+# Python requirements for fetching Mars rover photos from NASA API
+
+# HTTP library for making API requests to NASA Mars Rover API
+requests>=2.25.0
+
+# Note: This project uses only standard library modules except for requests
+# Standard library modules used:
+# - json: For parsing API responses
+# - datetime: For date calculations and formatting
+# - os: For environment variable access
+# - sys: For system exit codes
+# - random: For random selection of rovers and photos 
